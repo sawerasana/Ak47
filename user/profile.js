@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         let maxDuration = 72 * 60 * 60 * 1000;
         if (sub.plan === 'standard') maxDuration = 24 * 60 * 60 * 1000;
-        else if (sub.plan === 'basic') maxDuration = 60 * 60 * 1000;
+        else if (sub.plan === 'basic') maxDuration = 30 * 60 * 1000;
         const percent = Math.max(0, Math.min(1, remainingMs / maxDuration));
         drawTimerRing(percent);
     }
