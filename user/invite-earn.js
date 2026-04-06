@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             // Subsequent shares: standard share to any contact
             const siteUrl = window.location.origin;
-            const message = `Join me on PeshoX Intelligence – the most accurate Aviator detector! ${siteUrl}`;
+            const message = `Experience the most wonderful Aviator predictor ever created. PeshoX Intelligence delivers 98% accuracy, live radar, and instant predictions. Join now! ${siteUrl}`;
             whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
         }
 
