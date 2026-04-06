@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
         multiplierDisplay.textContent = `${multiplier}x`;
         predictStatus.querySelector('.english-text').textContent = `Prediction: ${multiplier}x - Cooling down`;
         predictStatus.querySelector('.urdu-text').textContent = `پیشن گوئی: ${multiplier}x - ٹھنڈا ہو رہا ہے`;
-        const cooldownSec = PX.CONFIG?.predictionCooldownSec || 5;
+        const cooldownSec = PX.CONFIG?.predictionCooldownSec || 10;
         let remaining = cooldownSec;
         cooldownTimer = setInterval(() => {
             remaining--;
