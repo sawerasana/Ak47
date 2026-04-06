@@ -63,8 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
             PX.showModal(
                 'Invalid Key',
                 'غلط کلید',
-                'Key must be 33, 44, or 55 characters and contain letters, numbers, symbols, and a space.',
-                'کلید 33، 44، یا 55 حروف کی ہونی چاہیے اور اس میں حروف، اعداد، علامات اور خالی جگہ ہونی چاہیے۔',
+                'Key must contain letters, numbers, symbols, and a space.',
+                'کلید میں حروف، اعداد، علامات اور خالی جگہ ہونی چاہیے۔',
                 null, false
             );
             return;
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="review-stars">${starsFull}</div>
                 <div class="review-text">${review.text}</div>
                 <div class="review-footer">
-                    <span>📅 ${review.timestamp}</span>
+                    <span> ${review.timestamp}</span>
                     <div>
                         <button class="like-btn" data-id="${review.id}">${likeIcon} ${review.likes} Likes</button>
                         <button class="comment-btn" data-id="${review.id}"><i class="fas fa-comment"></i> Comment</button>
