@@ -11,9 +11,9 @@
         brandName: 'PESHOX INTELLIGENCE',
         footerCredit: '@darkecho',
         easypaisaNumber: '03469393997',
-        planPrices: { basic: 3000, standard: 22000, premium: 33000 },
+        planPrices: { basic: 7000, standard: 22000, premium: 33000 },
         keyLengths: { basic: 33, standard: 44, premium: 55 },
-        planHours: { basic: 1, standard: 24, premium: 72 },
+        planHours: { basic: 0.5, standard: 24, premium: 72 },
         walletBonus: 5000,
         trxSuccessAttempt: 3,
         mainLoadingSec: 20,
@@ -213,8 +213,8 @@
         footer.className = 'global-footer';
         footer.innerHTML = `
             <div class="bilingual">
-                <span class="english-text">⚡ System Status: Secure. Access granted to verified users only. Powered by PeshoX Neural Engines. Managed by ${PX_CONFIG.footerCredit}.</span>
-                <span class="urdu-text">⚡ سسٹم کی صورتحال: محفوظ۔ صرف تصدیق شدہ صارفین کو رسائی دی گئی ہے۔ PeshoX نیورل انجن کے ذریعے تقویت یافتہ۔ ${PX_CONFIG.footerCredit} کے زیر انتظام۔</span>
+                <span class="english-text"> System Status: Secure. Access granted to verified users only. Powered by PeshoX Neural Engines. Managed by ${PX_CONFIG.footerCredit}.</span>
+                <span class="urdu-text"> سسٹم کی صورتحال: محفوظ۔ صرف تصدیق شدہ صارفین کو رسائی دی گئی ہے۔ PeshoX نیورل انجن کے ذریعے تقویت یافتہ۔ ${PX_CONFIG.footerCredit} کے زیر انتظام۔</span>
             </div>
         `;
         document.body.appendChild(footer);
