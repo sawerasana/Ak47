@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>PeshoX Intelligence | VIP Gateway</title>
+    <!-- Global assets -->
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="access-plans.css">
+    <!-- Global JS -->
+    <script src="/assets/js/global.js" defer></script>
+    <!-- Page-specific JS -->
+    <script src="access-plans.js" defer></script>
+</head>
+<body>
+    <div class="main-content plans-container">
+        <h1><i class="fas fa-crown"></i> VIP Gateway</h1>
+
+        <!-- Activation Section -->
+        <div class="activation-section">
+            <div class="bilingual">
+                <span class="english-text">Unlock Prediction – Enter your Access Key</span>
+                <span class="urdu-text">پیشن گوئی کھولیں – اپنی رسائی کلید درج کریں</span>
+            </div>
+            <div class="key-input-group">
+                <input type="text" id="accessKeyInput" placeholder="Paste your Access Key here...">
+                <button id="activateKeyBtn" class="btn-primary">ACTIVATE KEY</button>
+            </div>
+            <div class="bilingual hint">
+                <span class="english-text">How to get a key? Select a plan below and complete the payment simulation.</span>
+                <span class="urdu-text">کلید کیسے حاصل کریں؟ نیچے کوئی بھی پلان منتخب کریں اور ادائیگی سمولیشن مکمل کریں۔</span>
+            </div>
+        </div>
+
+        <!-- Plan Cards (Premium → Standard → Basic) -->
+        <div class="plans-stack">
+            <!-- Premium Plan (Top) -->
+            <div class="plan-card premium">
+                <div class="ribbon">MOST POPULAR</div>
+                <div class="plan-header">
+                    <h2>PREMIUM</h2>
+                    <div class="price">33,000 PKR</div>
+                    <div class="duration"><i class="fas fa-clock"></i> 72 Hours Access</div>
+                </div>
+                <button class="select-plan-btn" data-plan="premium">SELECT PLAN</button>
+            </div>
+
+            <!-- Standard Plan (Middle) -->
+            <div class="plan-card standard">
+                <div class="plan-header">
+                    <h2>STANDARD</h2>
+                    <div class="price">22,000 PKR</div>
+                    <div class="duration"><i class="fas fa-clock"></i> 24 Hours Access</div>
+                </div>
+                <button class="select-plan-btn" data-plan="standard">SELECT PLAN</button>
+            </div>
+
+            <!-- Basic Plan (Bottom) -->
+            <div class="plan-card basic">
+                <div class="plan-header">
+                    <h2>BASIC</h2>
+                    <div class="price">3,000 PKR</div>
+                    <div class="duration"><i class="fas fa-clock"></i> 1 Hour Access</div>
+                </div>
+                <button class="select-plan-btn" data-plan="basic">SELECT PLAN</button>
+            </div>
+        </div>
+
+        <!-- Live Reviews Section -->
+        <div class="reviews-section">
+            <h2><i class="fas fa-star"></i> Community Intelligence</h2>
+            <div class="bilingual note">
+                <span class="english-text">Only VIP members can post reviews.</span>
+                <span class="urdu-text">صرف وی آئی پی ممبران ہی ریویو دے سکتے ہیں۔</span>
+            </div>
+            <div id="reviewsFeed" class="reviews-feed">
+                <!-- Reviews will be dynamically loaded -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
