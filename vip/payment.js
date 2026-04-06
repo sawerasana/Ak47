@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const plan = urlParams.get('plan') || 'basic';
     let expectedKeyLength = 33;
-    let amount = 3000;
+    let amount = 7000;
     if (plan === 'standard') {
         expectedKeyLength = 44;
         amount = 22000;
