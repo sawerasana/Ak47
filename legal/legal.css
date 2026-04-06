@@ -38,3 +38,10 @@
     text-align: center;
     margin-top: 2rem;
 }
+
+/* Smaller Urdu text specifically for legal pages */
+.legal-content .urdu-text {
+    font-size: 0.7rem;
+    line-height: 1.6;
+    word-spacing: 0.2em;
+}
